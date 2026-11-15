@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating system and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local data and model artifacts
+data/raw/
+data/processed/
+models/
+mlruns/
+*.duckdb
+*.duckdb.wal
+
+# Build artifacts
+build/
+dist/
+site/
+.coverage
+htmlcov/
