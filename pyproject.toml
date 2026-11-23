@@ -1,0 +1,29 @@
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vice-intel"
+version = "0.1.0"
+description = "GTA VI Intelligence and Data Science Platform"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9,<10",
+    "ruff>=0.17,<0.18",
+]
