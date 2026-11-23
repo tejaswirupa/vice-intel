@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from vice_intel.data_loader import load_validated_dataset
 from vice_intel.sentiment import analyze_sentiment
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -24,6 +25,19 @@ def load_data() -> pd.DataFrame:
 
 
 df = load_data()
+
+
+@st.cache_data
+def load_data() -> pd.DataFrame:
+    """Load and validate synthetic GTA VI demo reactions."""
+    return load_validated_dataset(DATA_PATH)
+
+
+try:
+    df = load_data()
+except (FileNotFoundError, ValueError) as exc:
+    st.error(f"Unable to load dashboard data: {exc}")
+    st.stop()
 
 # Page heading
 st.title("🌴 VICE INTEL")
