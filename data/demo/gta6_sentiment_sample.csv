@@ -1,0 +1,13 @@
+id,date,source,text,sentiment
+1,2026-11-01,demo,The graphics look absolutely incredible,positive
+2,2026-11-02,demo,I cannot wait to explore Vice City,positive
+3,2026-11-03,demo,I hope the game runs smoothly on console,neutral
+4,2026-11-04,demo,The trailer visuals are amazing,positive
+5,2026-11-05,demo,I am worried about performance issues,negative
+6,2026-11-06,demo,The character designs look fantastic,positive
+7,2026-11-07,demo,I wonder how large the map will be,neutral
+8,2026-11-08,demo,The long wait is frustrating,negative
+9,2026-11-09,demo,The lighting and environments look beautiful,positive
+10,2026-11-10,demo,I hope the PC version arrives soon,neutral
+11,2026-11-11,demo,The gameplay possibilities seem exciting,positive
+12,2026-11-12,demo,I am disappointed by the delays,negative
